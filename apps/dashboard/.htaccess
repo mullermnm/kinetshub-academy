@@ -1,0 +1,8 @@
+PassengerEnabled on
+PassengerAppType node
+PassengerStartupFile start.js
+DirectoryIndex disabled
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ start.js [QSA,L]
